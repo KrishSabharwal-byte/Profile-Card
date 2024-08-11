@@ -1,0 +1,133 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.Profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.Profile-card::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 24px 24px 0px 0px ;
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+}
+
+.image {
+  background-image: url(Krish.jpg);
+  background-size: cover;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #4070f4;
+  padding: 3px;
+  
+}
+
+.Profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Name {
+ font-size: larger;
+ font-weight: 500;
+}
+
+.media-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.media-buttons .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    margin: 0px 8px;
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+    text-decoration: none;
+}
+
+.Buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.click {
+    background-color: #4070f4;
+    color: white;
+    border: none;
+    margin: 0px 8px;
+    padding: 8px 32px;
+    border-radius: 24px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.click:hover {
+    background-color: #0e4bf1;
+}
+
+.analytics {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0px 20px;
+    border-right: 3px solid #e7e7e7;
+}
+
+.data:last-child {
+    border-right: none;
+}
+   
